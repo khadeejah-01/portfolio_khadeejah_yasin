@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Khadeejah Yasin | Computer Science Student</title>
 <meta name="description" content="Portfolio of Khadeejah Yasin: machine learning, GenAI and IoT projects.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
@@ -21,7 +22,8 @@ aside{position:fixed;inset:0 auto 0 0;width:340px;padding:32px 36px;overflow:aut
 aside h1{font-size:26px;margin:0 0 4px;line-height:1.2}
 aside .role{color:var(--mut);margin:0 0 14px;font-size:15px}
 aside p.intro{font-size:16px;margin:0 0 20px}
-nav a{display:block;padding:6px 0 6px 18px;border-left:2px solid transparent;color:var(--mut);text-decoration:none}
+nav a{display:block;padding:7px 0 7px 18px;border-left:3px solid transparent;color:var(--mut);text-decoration:none;transition:border-color .2s,color .2s}
+nav a:hover{border-color:rgba(128,128,128,.35);color:var(--tx)}
 nav a.on{border-color:var(--ac);color:var(--tx);font-weight:500}
 .skills h3{font-size:14px;color:var(--mut);margin:20px 0 8px}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
@@ -31,29 +33,46 @@ main{margin-left:340px}
 section{padding:80px 72px}
 .band{background:var(--band);color:var(--bt)}
 .band .mut{color:var(--bm)}
-.label{color:var(--mut);margin:0 0 8px;font-weight:500}
-h2{font-size:clamp(34px,5vw,56px);line-height:1.1;margin:0 0 16px;font-weight:800;letter-spacing:-.02em}
-.sub{color:var(--mut);font-size:20px;max-width:34em;margin:0 0 40px}
+.label{color:var(--mut);margin:0 0 10px;font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+h2{font-size:clamp(32px,4.2vw,46px);line-height:1.1;margin:0 0 16px;font-weight:800;letter-spacing:-.02em}
+.sub{color:var(--tx);font-size:18px;max-width:38em;margin:0 0 40px}
 .band .sub{color:var(--bm)}
 .filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
 .filters button{font:inherit;font-size:14px;background:none;border:1px solid var(--line);border-radius:999px;padding:4px 14px;color:var(--tx);cursor:pointer}
 .filters button[aria-pressed=true]{background:var(--ac);color:var(--bg);border-color:var(--ac)}
 .row{display:grid;grid-template-columns:150px 1fr auto;gap:12px 28px;padding:28px 0;border-top:1px solid var(--line);align-items:baseline}
 .band .row{border-color:#374151}
-.row h3{margin:0;font-size:24px;font-weight:500;line-height:1.25}
+.row h3{margin:0;font-size:22px;font-weight:500;line-height:1.25}
 .row .meta{margin:4px 0 0;color:var(--mut);font-size:16px}
 .band .meta{color:var(--bm)}
-.hl{font-style:italic;font-size:22px;text-align:right}
-.more{background:none;border:0;font:inherit;font-size:13px;color:inherit;cursor:pointer;padding:0;margin-left:14px}
-.det{grid-column:2/4;display:none;max-width:40em}
-.det.open{display:block}
-.det p{margin:0 0 10px}
-.det a{margin-right:16px}
+.hl{font-style:italic;font-size:20px;text-align:right}
 .empty{color:var(--mut)}
 .explore{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:32px}
 .explore h3{margin:0 0 6px;font-size:20px}
 .explore p{margin:0;color:var(--mut)}
-.links a{display:inline-block;margin:0 22px 10px 0;font-size:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:24px;margin-bottom:28px}
+.card{display:flex;flex-direction:column;background:var(--side);border:1px solid var(--line);padding:32px;transition:border-color .2s,transform .2s}
+.card:hover,.card:focus-within{border-color:var(--ac);transform:translateY(-3px)}
+.card .cat{margin:0 0 14px;color:var(--mut);font-size:15px;font-weight:500}
+.card h3{margin:0 0 12px;font-size:22px;font-weight:500;line-height:1.25}
+.card p{margin:0 0 14px}
+.card .key{font-style:italic;font-size:19px}
+.card details{margin:0 0 16px;color:var(--mut);font-size:15px}
+.card summary{cursor:pointer;color:var(--tx);font-size:14px}
+.card details p{margin:8px 0 0}
+.card .lk{margin-top:auto;display:flex;gap:20px;flex-wrap:wrap}
+.card .lk a{font-weight:500;text-decoration:none}
+.card .lk a:hover{text-decoration:underline}
+#contact{border-top:1px solid var(--line)}
+.cbox{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:24px;margin-bottom:24px}
+.cbox a{display:block;padding:32px 32px;background:var(--side);border:1px solid var(--line);text-decoration:none;transition:border-color .2s,transform .2s}
+.cbox a:hover,.cbox a:focus-visible{border-color:var(--ac);transform:translateY(-3px)}
+.cbox a.pri{background:var(--ac);color:var(--bg);border-color:var(--ac)}
+.cbox strong{display:block;margin-bottom:10px;font-size:22px}
+.cbox span{display:block;color:var(--mut);font-size:16px;overflow-wrap:anywhere}
+.cbox .pri span{color:inherit;opacity:.85}
+.cbox .pri span+span{margin-top:6px;font-size:14px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}.card:hover,.cbox a:hover{transform:none}}
 footer{padding:32px 72px;color:var(--mut);font-size:14px;border-top:1px solid var(--line)}
 @media(max-width:900px){
 aside{position:static;width:auto;border:0;border-bottom:1px solid var(--line);padding:24px 20px}
@@ -64,7 +83,6 @@ main{margin-left:0}
 section{padding:56px 20px}
 .row{grid-template-columns:1fr}
 .hl{text-align:left}
-.det{grid-column:1}
 footer{padding:24px 20px}
 }
 </style>
@@ -73,7 +91,7 @@ footer{padding:24px 20px}
 <aside>
 <button id="theme" aria-label="Switch to dark theme" title="Toggle theme">&#9790;</button>
 <h1>Khadeejah Yasin</h1>
-<p class="role">Computer Science Student | Machine Learning and GenAI</p>
+<p class="role">Machine Learning & Data Science | GenAI & Agentic AI</p>
 <p class="intro">I build research-driven, secure and efficient software, from IoT systems to machine learning models.</p>
 <nav aria-label="Sections">
 <a href="#projects">Projects</a>
@@ -92,14 +110,14 @@ footer{padding:24px 20px}
 <h2>What I've built</h2>
 <p class="sub">Machine learning, data systems and IoT projects, with code on GitHub.</p>
 <div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
-<div id="plist"></div>
+<div class="grid" id="plist"></div>
 <p class="empty">More work: <a href="https://drive.google.com/file/d/19LLVFpBY4qQZHvMbHeb7ah8dgeLExVrI/view?usp=drive_link" target="_blank" rel="noopener">other projects (Google Drive)</a></p>
 </section>
 
 <section id="exploring" class="band">
-<p class="label mut">Self-taught</p>
+<p class="label mut">Learnings</p>
 <h2>What I'm Exploring</h2>
-<p class="sub">Generative AI and agentic workflows, learned on my own and applied in a RAG project.</p>
+<p class="sub">Generative AI and agentic workflows, and a RAG project built with them.</p>
 <div class="explore">
 <div><h3>How LLMs work</h3><p class="mut">Tokenization, transformers, attention, training versus inference, and base versus instruction-tuned models.</p></div>
 <div><h3>Retrieval-Augmented Generation</h3><p class="mut">Embeddings, vector stores (ChromaDB, FAISS), chunking, retrieval and answer generation.</p></div>
@@ -131,16 +149,16 @@ footer{padding:24px 20px}
 <div class="row"><span class="mono">Bootcamp</span><div><h3>IoT and Cloud Computing Bootcamp</h3><p class="meta">Firnas Tech</p></div></div>
 </section>
 
-<section id="contact" class="band">
-<p class="label mut">Contact</p>
+<section id="contact">
+<p class="label">Contact</p>
 <h2>Get in touch</h2>
-<p class="sub">Open to internships and collaboration. Email is the quickest way to reach me.</p>
-<div class="links">
-<a href="mailto:khadeejah1065@gmail.com">khadeejah1065@gmail.com</a>
-<a href="https://www.linkedin.com/in/khadeejah-/" target="_blank" rel="noopener">LinkedIn</a>
-<a href="https://github.com/khadeejah-01" target="_blank" rel="noopener">GitHub</a>
-<a href="resume.pdf" download>Download resume</a>
+<p class="sub">I'm open to internships and collaboration where I can learn, build and contribute. Email is the best way to reach me.</p>
+<div class="cbox">
+<a class="pri" href="mailto:khadeejah1065@gmail.com"><strong>Email</strong><span>Best for detailed discussions</span><span>khadeejah1065@gmail.com</span></a>
+<a href="https://www.linkedin.com/in/khadeejah-/" target="_blank" rel="noopener"><strong>LinkedIn</strong><span>Professional network</span></a>
+<a href="https://github.com/khadeejah-01" target="_blank" rel="noopener"><strong>GitHub</strong><span>Code and projects</span></a>
 </div>
+<p><a href="resume.pdf" download>Download resume</a></p>
 </section>
 <footer>Khadeejah Yasin, 2026</footer>
 </main>
@@ -180,19 +198,16 @@ const $=s=>document.querySelector(s);
 const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
 for(const g in SKILLS){$("#skills").insertAdjacentHTML("beforeend",`<h3>${g}</h3><div class="chips">${SKILLS[g].map(x=>`<span class="chip">${esc(x)}</span>`).join("")}</div>`)}
 function render(tag){
- $("#plist").innerHTML=PROJECTS.filter(p=>tag==="All"||p.tags.includes(tag)).map((p,i)=>`
- <div class="row"><span class="mono">${p.tags.join(", ")}</span>
- <div><h3>${esc(p.t)}</h3><p class="meta">${esc(p.s)}</p></div>
- <span class="hl">${esc(p.hl)}<button class="more" aria-expanded="false" aria-controls="d${i}">+ details</button></span>
- <div class="det" id="d${i}">${p.d.map(x=>`<p>${esc(x)}</p>`).join("")}${p.l.map(l=>`<a href="${l[1]}" target="_blank" rel="noopener">${l[0]}</a>`).join("")}</div></div>`).join("");
+ $("#plist").innerHTML=PROJECTS.filter(p=>tag==="All"||p.tags.includes(tag)).map(p=>`
+ <article class="card"><p class="cat">${p.tags.join(", ")}</p>
+ <h3>${esc(p.t)}</h3><p>${esc(p.s)}</p><p class="key">${esc(p.hl)}</p>
+ <details><summary>Details</summary>${p.d.map(x=>`<p>${esc(x)}</p>`).join("")}</details>
+ ${p.l.length?`<div class="lk">${p.l.map(l=>`<a href="${l[1]}" target="_blank" rel="noopener">${l[0]} →</a>`).join("")}</div>`:""}</article>`).join("");
 }
 const tags=["All",...new Set(PROJECTS.flatMap(p=>p.tags))];
 $("#filters").innerHTML=tags.map(t=>`<button aria-pressed="${t==="All"}">${t}</button>`).join("");
 $("#filters").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;
  document.querySelectorAll("#filters button").forEach(x=>x.setAttribute("aria-pressed",x===b));render(b.textContent)});
-$("#plist").addEventListener("click",e=>{const b=e.target.closest(".more");if(!b)return;
- const o=$("#"+b.getAttribute("aria-controls")).classList.toggle("open");
- b.setAttribute("aria-expanded",o);b.textContent=o?"– close":"+ details"});
 render("All");
 /* theme: light by default */
 const root=document.documentElement,tb=$("#theme");
