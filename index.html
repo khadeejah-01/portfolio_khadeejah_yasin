@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Khadeejah Yasin | Computer Science Student</title>
+<meta name="description" content="Portfolio of Khadeejah Yasin: machine learning, GenAI and IoT projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--side:#fafafa;--tx:#1f2937;--mut:#6b7280;--line:#e5e7eb;--band:#111827;--bt:#f3f4f6;--bm:#9ca3af;--chip:#f3f4f6;--ac:#111827}
+[data-theme=dark]{--bg:#0b1220;--side:#0f172a;--tx:#e5e7eb;--mut:#9ca3af;--line:#1f2937;--band:#020617;--chip:#1e293b;--ac:#f9fafb}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.6 Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)}
+a{color:inherit}
+:focus-visible{outline:2px solid #3b82f6;outline-offset:2px}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:14px}
+aside{position:fixed;inset:0 auto 0 0;width:340px;padding:32px 36px;overflow:auto;background:var(--side);border-right:1px solid var(--line)}
+aside h1{font-size:26px;margin:0 0 4px;line-height:1.2}
+aside .role{color:var(--mut);margin:0 0 14px;font-size:15px}
+aside p.intro{font-size:16px;margin:0 0 20px}
+nav a{display:block;padding:6px 0 6px 18px;border-left:2px solid transparent;color:var(--mut);text-decoration:none}
+nav a.on{border-color:var(--ac);color:var(--tx);font-weight:500}
+.skills h3{font-size:14px;color:var(--mut);margin:20px 0 8px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{background:var(--chip);border:1px solid var(--line);border-radius:6px;padding:3px 9px;font-size:13px}
+#theme{position:absolute;top:28px;right:28px;background:none;border:1px solid var(--line);border-radius:50%;width:34px;height:34px;cursor:pointer;color:var(--tx);font-size:16px}
+main{margin-left:340px}
+section{padding:80px 72px}
+.band{background:var(--band);color:var(--bt)}
+.band .mut{color:var(--bm)}
+.label{color:var(--mut);margin:0 0 8px;font-weight:500}
+h2{font-size:clamp(34px,5vw,56px);line-height:1.1;margin:0 0 16px;font-weight:800;letter-spacing:-.02em}
+.sub{color:var(--mut);font-size:20px;max-width:34em;margin:0 0 40px}
+.band .sub{color:var(--bm)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.filters button{font:inherit;font-size:14px;background:none;border:1px solid var(--line);border-radius:999px;padding:4px 14px;color:var(--tx);cursor:pointer}
+.filters button[aria-pressed=true]{background:var(--ac);color:var(--bg);border-color:var(--ac)}
+.row{display:grid;grid-template-columns:150px 1fr auto;gap:12px 28px;padding:28px 0;border-top:1px solid var(--line);align-items:baseline}
+.band .row{border-color:#374151}
+.row h3{margin:0;font-size:24px;font-weight:500;line-height:1.25}
+.row .meta{margin:4px 0 0;color:var(--mut);font-size:16px}
+.band .meta{color:var(--bm)}
+.hl{font-style:italic;font-size:22px;text-align:right}
+.more{background:none;border:0;font:inherit;font-size:13px;color:inherit;cursor:pointer;padding:0;margin-left:14px}
+.det{grid-column:2/4;display:none;max-width:40em}
+.det.open{display:block}
+.det p{margin:0 0 10px}
+.det a{margin-right:16px}
+.empty{color:var(--mut)}
+.explore{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:32px}
+.explore h3{margin:0 0 6px;font-size:20px}
+.explore p{margin:0;color:var(--mut)}
+.links a{display:inline-block;margin:0 22px 10px 0;font-size:20px}
+footer{padding:32px 72px;color:var(--mut);font-size:14px;border-top:1px solid var(--line)}
+@media(max-width:900px){
+aside{position:static;width:auto;border:0;border-bottom:1px solid var(--line);padding:24px 20px}
+nav{display:flex;overflow-x:auto;gap:4px}
+nav a{border-left:0;border-bottom:2px solid transparent;padding:6px 10px;white-space:nowrap}
+nav a.on{border-color:var(--ac)}
+main{margin-left:0}
+section{padding:56px 20px}
+.row{grid-template-columns:1fr}
+.hl{text-align:left}
+.det{grid-column:1}
+footer{padding:24px 20px}
+}
+</style>
+</head>
+<body>
+<aside>
+<button id="theme" aria-label="Switch to dark theme" title="Toggle theme">&#9790;</button>
+<h1>Khadeejah Yasin</h1>
+<p class="role">Computer Science Student | Machine Learning and GenAI</p>
+<p class="intro">I build research-driven, secure and efficient software, from IoT systems to machine learning models.</p>
+<nav aria-label="Sections">
+<a href="#projects">Projects</a>
+<a href="#exploring">What I'm Exploring</a>
+<a href="#experience">Experience</a>
+<a href="#education">Education</a>
+<a href="#certifications">Certifications</a>
+<a href="#contact">Contact</a>
+</nav>
+<div class="skills" id="skills"><h3>Skills</h3></div>
+</aside>
+
+<main>
+<section id="projects">
+<p class="label">Projects</p>
+<h2>What I've built</h2>
+<p class="sub">Machine learning, data systems and IoT projects, with code on GitHub.</p>
+<div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
+<div id="plist"></div>
+<p class="empty">More work: <a href="https://drive.google.com/file/d/19LLVFpBY4qQZHvMbHeb7ah8dgeLExVrI/view?usp=drive_link" target="_blank" rel="noopener">other projects (Google Drive)</a></p>
+</section>
+
+<section id="exploring" class="band">
+<p class="label mut">Self-taught</p>
+<h2>What I'm Exploring</h2>
+<p class="sub">Generative AI and agentic workflows, learned on my own and applied in a RAG project.</p>
+<div class="explore">
+<div><h3>How LLMs work</h3><p class="mut">Tokenization, transformers, attention, training versus inference, and base versus instruction-tuned models.</p></div>
+<div><h3>Retrieval-Augmented Generation</h3><p class="mut">Embeddings, vector stores (ChromaDB, FAISS), chunking, retrieval and answer generation.</p></div>
+<div><h3>LangChain</h3><p class="mut">Chains, prompts, document loaders, text splitters, memory, retrieval chains and tool use.</p></div>
+<div><h3>LangGraph</h3><p class="mut">Stateful, multi-step workflows: nodes, edges, state, conditional routing and cycles.</p></div>
+</div>
+</section>
+
+<section id="experience">
+<p class="label">Experience</p>
+<h2>Experience and achievements</h2>
+<div class="row"><span class="mono">Mar 2025</span><div><h3>C++ Programming Intern</h3><p class="meta">CodeAlpha</p><p class="meta">Used C++ and OOP to build problem-solving and coding skills on real-world programming tasks.</p></div></div>
+<!-- Bootcamp date not provided: add it in the first column below. -->
+<div class="row"><span class="mono">Bootcamp</span><div><h3>IoT and Cloud Computing Bootcamp</h3><p class="meta">Firnas Tech. Won 1st position at the ABHCG Bootcamp for the IoT-based Smart Farming System, using Firebase for real-time monitoring.</p></div><span class="hl">1st position</span></div>
+</section>
+
+<section id="education" class="band">
+<p class="label mut">Education</p>
+<h2>Education</h2>
+<div class="row"><span class="mono">Nov 2023 – Current</span><div><h3>B.S. in Computer Science</h3><p class="meta">Army Burn Hall College, affiliated with the University of Peshawar</p><p class="meta">Coursework: Data Structures and Algorithms, Computer Organization and Architecture, Artificial Intelligence, Intro to Neural Networks, Applied Image Processing, Probability and Statistics, Linear Algebra, Multivariate Calculus</p></div><span class="hl">GPA 4.0 / 4.0</span></div>
+</section>
+
+<section id="certifications">
+<p class="label">Certifications</p>
+<h2>Certifications and training</h2>
+<div class="row"><span class="mono">Aug 2025</span><div><h3>AWS Educate: Getting Started with Compute</h3><p class="meta">Amazon Web Services</p></div></div>
+<div class="row"><span class="mono">Jul 2025</span><div><h3>AWS Educate: Getting Started with Storage</h3><p class="meta">Amazon Web Services</p></div></div>
+<div class="row"><span class="mono">Dec 2024</span><div><h3>Data Science, 3-month online training</h3><p class="meta">PFTP</p></div></div>
+<div class="row"><span class="mono">Bootcamp</span><div><h3>IoT and Cloud Computing Bootcamp</h3><p class="meta">Firnas Tech</p></div></div>
+</section>
+
+<section id="contact" class="band">
+<p class="label mut">Contact</p>
+<h2>Get in touch</h2>
+<p class="sub">Open to internships and collaboration. Email is the quickest way to reach me.</p>
+<div class="links">
+<a href="mailto:khadeejah1065@gmail.com">khadeejah1065@gmail.com</a>
+<a href="https://www.linkedin.com/in/khadeejah-/" target="_blank" rel="noopener">LinkedIn</a>
+<a href="https://github.com/khadeejah-01" target="_blank" rel="noopener">GitHub</a>
+<a href="resume.pdf" download>Download resume</a>
+</div>
+</section>
+<footer>Khadeejah Yasin, 2026</footer>
+</main>
+
+<script>
+/* To add a project: copy one entry below. Tags create the filter buttons automatically. */
+const PROJECTS=[
+{t:"Cloud Cost Prediction and Monitoring Dashboard",tags:["ML","Data"],hl:"1.18M+ records",
+ s:"A Java cloud cost monitoring system with a Flask-based ML model that forecasts costs.",
+ d:["Built a monitoring system in Java to track and analyze resource utilization.","Integrated a Flask-based ML model that forecasts cloud costs from historical usage data.","Processed 1.18M+ records to improve prediction performance and analytical insights."],
+ l:[["GitHub","https://github.com/khadeejah-01/Cloud-Cost-Prediction-Monitoring-Dashboard"]]},
+{t:"LoanWise: Data-Driven Lending Decision System",tags:["ML"],hl:"81% precision (Naïve Bayes)",
+ s:"An end-to-end supervised ML pipeline for loan approval prediction, in Python and Scikit-learn.",
+ d:["Compared KNN, Logistic Regression and Naïve Bayes, with EDA, feature engineering, encoding and evaluation (precision, recall, F1).","Naïve Bayes reached the highest precision (81%). Logistic Regression gave a better precision-recall balance after feature engineering. KNN performed poorly on the high-dimensional encoded features."],
+ l:[["GitHub","https://github.com/khadeejah-01/AI_ML/tree/main/Project_LoanWise%3A%20Data_Driven_Lending_Decision_System/"]]},
+{t:"Sentiment Analysis Model",tags:["ML","NLP"],hl:"89.22% accuracy",
+ s:"Binary text classification on the IMDB 50k dataset using Logistic Regression.",
+ d:["Reached 89.22% accuracy using TF-IDF vectorization.","Preprocessing included HTML removal and NLTK filtering.","Validated with precision and recall to confirm it separates positive from negative sentiment."],l:[]},
+{t:"IoT-based Smart Farming System",tags:["IoT"],hl:"1st position",
+ s:"A smart farming system with real-time monitoring through Firebase, built at the IoT and Cloud Computing Bootcamp.",
+ d:["Secured 1st position at the ABHCG Bootcamp (Firnas Tech).","Used Firebase cloud to enable real-time monitoring."],
+ l:[["LinkedIn post","https://lnkd.in/p/d6nRWsGk"]]},
+{t:"Smart Healthcare Diagnostic and Records Management System",tags:["Data"],hl:"7-table 3NF schema",
+ s:"A database project for healthcare records with ICD-10 coding, audit logging and role-based access control.",
+ d:["A 7-table relational schema, normalized to 3NF.","Includes ICD-10 coding, audit logging, RBAC security and AI readiness."],
+ l:[["GitHub","https://github.com/khadeejah-01/smart-healthcare-db"]]},
+{t:"RAG Pipeline",tags:["GenAI"],hl:"ChromaDB and FAISS",
+ s:"A retrieval-augmented generation pipeline built with LangChain, ChromaDB and FAISS as part of self-study.",
+ d:["A RAG pipeline using ChromaDB and FAISS as vector stores."],
+ l:[["GitHub","https://github.com/khadeejah-01/AI_ML/tree/main/RAG"]]}
+];
+const SKILLS={"Programming":["Java","Python","C++","SQL","MATLAB","JavaScript","HTML/CSS"],
+"Data science and ML":["NumPy","Pandas","Matplotlib","Scikit-learn","EDA","Data preprocessing","Model evaluation","Ensemble learning","Unsupervised learning"],
+"GenAI and agentic AI":["LLM fundamentals","RAG","LangChain","LangGraph","ChromaDB","FAISS","Vector DB","Prompt engineering","PyTorch","Deep learning","TF-IDF"],
+"Tools":["AWS","Firebase","Git/GitHub","Linux","Jupyter","Wireshark","Anaconda","PyCharm","Android Studio","NetBeans"]};
+const $=s=>document.querySelector(s);
+const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
+for(const g in SKILLS){$("#skills").insertAdjacentHTML("beforeend",`<h3>${g}</h3><div class="chips">${SKILLS[g].map(x=>`<span class="chip">${esc(x)}</span>`).join("")}</div>`)}
+function render(tag){
+ $("#plist").innerHTML=PROJECTS.filter(p=>tag==="All"||p.tags.includes(tag)).map((p,i)=>`
+ <div class="row"><span class="mono">${p.tags.join(", ")}</span>
+ <div><h3>${esc(p.t)}</h3><p class="meta">${esc(p.s)}</p></div>
+ <span class="hl">${esc(p.hl)}<button class="more" aria-expanded="false" aria-controls="d${i}">+ details</button></span>
+ <div class="det" id="d${i}">${p.d.map(x=>`<p>${esc(x)}</p>`).join("")}${p.l.map(l=>`<a href="${l[1]}" target="_blank" rel="noopener">${l[0]}</a>`).join("")}</div></div>`).join("");
+}
+const tags=["All",...new Set(PROJECTS.flatMap(p=>p.tags))];
+$("#filters").innerHTML=tags.map(t=>`<button aria-pressed="${t==="All"}">${t}</button>`).join("");
+$("#filters").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;
+ document.querySelectorAll("#filters button").forEach(x=>x.setAttribute("aria-pressed",x===b));render(b.textContent)});
+$("#plist").addEventListener("click",e=>{const b=e.target.closest(".more");if(!b)return;
+ const o=$("#"+b.getAttribute("aria-controls")).classList.toggle("open");
+ b.setAttribute("aria-expanded",o);b.textContent=o?"– close":"+ details"});
+render("All");
+/* theme: light by default */
+const root=document.documentElement,tb=$("#theme");
+function setTheme(t){root.dataset.theme=t;tb.innerHTML=t==="dark"?"&#9728;":"&#9790;";
+ tb.setAttribute("aria-label",t==="dark"?"Switch to light theme":"Switch to dark theme");
+ try{localStorage.setItem("theme",t)}catch(e){}}
+let saved="light";try{saved=localStorage.getItem("theme")||"light"}catch(e){}
+setTheme(saved);
+tb.onclick=()=>setTheme(root.dataset.theme==="dark"?"light":"dark");
+/* highlight current section in the sidebar */
+const links=[...document.querySelectorAll("nav a")];
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle("on",a.hash==="#"+e.target.id))}),{rootMargin:"-30% 0px -60% 0px"});
+document.querySelectorAll("main section").forEach(s=>io.observe(s));
+</script>
+</body>
+</html>
